@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCEF5DDD-EA0E-4C52-8B4B-B7BF9BDDD5A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp7</RootNamespace>
+    <AssemblyName>WpfApp7</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="addManufacture.xaml.cs">
+      <DependentUpon>addManufacture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addProduct.xaml.cs">
+      <DependentUpon>addProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addManufactureAA.xaml.cs">
+      <DependentUpon>addManufactureAA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addProduct2.xaml.cs">
+      <DependentUpon>addProduct2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminManufacture.xaml.cs">
+      <DependentUpon>AdminManufacture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MainWindow2.xaml.cs">
+      <DependentUpon>MainWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MenuAdmin.xaml.cs">
+      <DependentUpon>MenuAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="database\cosmetics.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cosmetics.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\cosmetics.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\cosmetics.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cosmetics.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="database\Manufacturer.cs">
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUser.xaml.cs">
+      <DependentUpon>MenuUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="database\Product.cs">
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\sp_helpdiagrams_Result.cs">
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database\sysdiagrams.cs">
+      <DependentUpon>cosmetics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserManufacture.xaml.cs">
+      <DependentUpon>UserManufacture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserProduct.xaml.cs">
+      <DependentUpon>UserProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="addManufacture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="admin\addManufactureAA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="admin\addProduct2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="admin\AdminManufacture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="admin\MainWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="admin\MenuAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserManufacture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="database\cosmetics.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>cosmetics.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="database\cosmetics.edmx.diagram">
+      <DependentUpon>cosmetics.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\beauty_logo.ico" />
+    <Resource Include="res\beauty_logo.png" />
+    <Resource Include="Image\1781670-1.jpg" />
+    <Resource Include="Image\1781674-1.jpg" />
+    <Resource Include="Image\1781675-1.jpg" />
+    <Resource Include="Image\1781676-1.jpg" />
+    <Resource Include="Image\1781678-1.jpg" />
+    <Resource Include="Image\1781679-1.jpg" />
+    <Resource Include="Image\1781680-1.jpg" />
+    <Resource Include="Image\1781693-1.jpg" />
+    <Resource Include="Image\1781695-1.jpg" />
+    <Resource Include="Image\1781696-1.jpg" />
+    <Resource Include="Image\1781711-1.jpg" />
+    <Resource Include="Image\1953276-1.jpg" />
+    <Resource Include="Image\2008486-1.jpg" />
+    <Resource Include="Image\2008488-1.jpg" />
+    <Resource Include="Image\2262226-1.jpg" />
+    <Resource Include="Image\2351755-1.jpg" />
+    <Resource Include="Image\2697576-1.jpg" />
+    <Resource Include="Image\2697586-1.jpg" />
+    <Resource Include="Image\3388879-1.jpg" />
+    <Resource Include="Image\3432442-1.jpg" />
+    <Resource Include="Image\3432453-1.jpg" />
+    <Resource Include="Image\3432465-1.jpg" />
+    <Resource Include="Image\3472591-1.jpg" />
+    <Resource Include="Image\3472601-1.jpg" />
+    <Resource Include="Image\3472602-1.jpg" />
+    <Resource Include="Image\3472604-1.jpg" />
+    <Resource Include="Image\3472608-1.jpg" />
+    <Resource Include="Image\5427580-1.jpg" />
+    <Resource Include="Image\5625224-1.jpg" />
+    <Resource Include="Image\6433979-1.jpg" />
+    <Resource Include="Image\6433981-1.jpg" />
+    <Resource Include="Image\6433982-1.jpg" />
+    <Resource Include="Image\6433984-1.jpg" />
+    <Resource Include="Image\6556449-1.jpg" />
+    <Resource Include="Image\6556451-1.jpg" />
+    <Resource Include="Image\6556452-1.jpg" />
+    <Resource Include="Image\6556453-1.jpg" />
+    <Resource Include="Image\6556454-1.jpg" />
+    <Resource Include="Image\6556455-1.jpg" />
+    <Resource Include="Image\6556457-1.jpg" />
+    <Resource Include="Image\6556458-1.jpg" />
+    <Resource Include="Image\6556459-1.jpg" />
+    <Resource Include="Image\6556460-1.jpg" />
+    <Resource Include="Image\6556461-1.jpg" />
+    <Resource Include="Image\6556462-1.jpg" />
+    <Resource Include="Image\6556463-1.jpg" />
+    <Resource Include="Image\6556464-1.jpg" />
+    <Resource Include="Image\6556465-1.jpg" />
+    <Resource Include="Image\6556466-1.jpg" />
+    <Resource Include="Image\6556469-1.jpg" />
+    <Resource Include="Image\6691687-1.jpg" />
+    <Resource Include="Image\6691688-1.jpg" />
+    <Resource Include="Image\6953158-1.jpg" />
+    <Resource Include="Image\6953159-1.jpg" />
+    <Resource Include="Image\6953160-1.jpg" />
+    <Resource Include="Image\6953169-1.jpg" />
+    <Resource Include="Image\6953176-1.jpg" />
+    <Resource Include="Image\6953177-1.jpg" />
+    <Resource Include="Image\6964195-1.jpg" />
+    <Resource Include="Image\6964196-1.jpg" />
+    <Resource Include="Image\6964197-1.jpg" />
+    <Resource Include="Image\6964198-1.jpg" />
+    <Resource Include="Image\6964199-1.jpg" />
+    <Resource Include="Image\7064314-1.jpg" />
+    <Resource Include="Image\7064315-1.jpg" />
+    <Resource Include="Image\7064320-1.jpg" />
+    <Resource Include="Image\7064322-1.jpg" />
+    <Resource Include="Image\7064323-1.jpg" />
+    <Resource Include="Image\7064324-1.jpg" />
+    <Resource Include="Image\7064326-1.jpg" />
+    <Resource Include="Image\7064330-1.jpg" />
+    <Resource Include="Image\7064333-1.jpg" />
+    <Resource Include="Image\7064334-1.jpg" />
+    <Resource Include="Image\7064335-1.jpg" />
+    <Resource Include="Image\7293278-1.jpg" />
+    <Resource Include="Image\7299376-1.jpg" />
+    <Resource Include="Image\7299377-1.jpg" />
+    <Resource Include="Image\7299378-1.jpg" />
+    <Resource Include="Image\7528031-1.jpg" />
+    <Resource Include="Image\7528032-1.jpg" />
+    <Resource Include="Image\7528034-1.jpg" />
+    <Resource Include="Image\7847905-1.jpg" />
+    <Resource Include="Image\7847906-1.jpg" />
+    <Resource Include="Image\7889950-1.jpg" />
+    <Resource Include="Image\9631437-1.jpg" />
+    <Resource Include="Image\9631438-1.jpg" />
+    <Resource Include="Image\9631439-1.jpg" />
+    <Resource Include="Image\9631442-1.jpg" />
+    <Resource Include="Image\9631443-1.jpg" />
+    <Resource Include="Image\9631445-1.jpg" />
+    <Resource Include="Image\9631446-1.jpg" />
+    <Resource Include="Image\9631447-1.jpg" />
+    <Resource Include="Image\9631448-1.jpg" />
+    <Resource Include="Image\9939700-1.jpg" />
+    <Resource Include="Image\9939701-1.jpg" />
+    <Resource Include="Image\9939704-1.jpg" />
+    <Resource Include="Image\9939709-1.jpg" />
+    <Resource Include="Image\9939710-1.jpg" />
+    <Resource Include="Image\9939714-1.jpg" />
+    <Resource Include="Image\9939719-1.jpg" />
+    <Resource Include="обменик .txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database\cosmetics.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>cosmetics.edmx</DependentUpon>
+      <LastGenOutput>cosmetics.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="database\cosmetics.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>cosmetics.edmx</DependentUpon>
+      <LastGenOutput>cosmetics.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

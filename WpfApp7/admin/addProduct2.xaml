@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp7.admin.addProduct2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7.admin"
+        mc:Ignorable="d"
+        Title="addProductAdmin" Height="575" Width="800" Icon="/Res/beauty_logo.ico" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="{Binding ImageName}" Width="200" Height="200" Margin="34,146,566,22" Grid.RowSpan="6" />
+
+        <TextBlock Grid.Row="2" Text="Название товара:" Margin="311,10,10,10" />
+        <TextBox Grid.Row="3" Text="{Binding ProductName}" Margin="311,10,10,10" />
+
+        <TextBlock Grid.Row="4" Text="Статус (Да/Нет):" Margin="311,10,10,10" />
+        <TextBox Grid.Row="5" Text="{Binding Status}" Margin="311,10,10,10"/>
+
+        <TextBlock Grid.Row="6" Text="Цена:" Margin="311,10,10,10" />
+        <TextBox Grid.Row="7" Text="{Binding Price}" Margin="311,10,10,137" />
+        <Button Content="Купить" HorizontalAlignment="Left" Margin="617,83,0,0" Grid.Row="7" VerticalAlignment="Top" Click="Buy_ProductA_Click" Height="35" Width="161"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="410,83,0,0" Grid.Row="7" VerticalAlignment="Top" Click="Close_ProductA_Click" Height="35" Width="161"/>
+    </Grid>
+</Window>
+

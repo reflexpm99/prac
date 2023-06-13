@@ -1,0 +1,9 @@
+﻿public void Button_Click(object sender, RoutedEventArgs e)
+                {
+                    addProduct addProduct = new addProduct();
+                    addProduct.Show();
+
+                }
+                
+
+                Э

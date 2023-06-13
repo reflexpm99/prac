@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp7.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="800" Icon="/Res/beauty_logo.ico" >
+    <Grid>
+
+        <Grid Background="White"  HorizontalAlignment="Center" Width="378" Height="539" VerticalAlignment="Center">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="134*"/>
+                <RowDefinition Height="51*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="65*"/>
+                <RowDefinition Height="75*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="57*"/>
+                <ColumnDefinition Width="370*"/>
+                <ColumnDefinition Width="61*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image HorizontalAlignment="Left" Height="100" Margin="100,60,0,-10" VerticalAlignment="Center" Width="70"  Grid.Column="1" Source="/Res/beauty_logo.png" />
+            <TextBlock Text="Авторизация" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" Height="27" Width="120" FontFamily="Tahoma"/>
+            <TextBlock Text="Логин" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Height="16" Width="34" Margin="0,0,0,5" FontFamily="Tahoma"/>
+            <TextBox x:Name="tb_login" Grid.Row="3" Grid.Column="1" />
+            <TextBlock Text="Пароль" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="4" Height="16" Width="99" Margin="0,0,0,5" FontFamily="Tahoma"/>
+            <PasswordBox x:Name="tb_password" Grid.Row="5" Grid.Column="1" />
+            <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="1">
+                <Button x:Name="btn_enter" Content="Войти" Width="110" Click="btn_enter_Click"  Background="#FFFF4A6D" FontFamily="Tahoma" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
